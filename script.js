@@ -123,3 +123,19 @@ document.addEventListener("click", function(event) {
 //     moreItems.style.display = "none";
 //   });
 // });
+
+// script.js
+
+function toggleMoreAboutMeesho() {
+  const moreContent = document.getElementById('more-content');
+  const button = document.querySelector('.toggle-button');
+
+  if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+      moreContent.style.display = 'block';
+      button.innerHTML = '&#9660;'; // Change the arrow direction
+  } else {
+      moreContent.style.display = 'none';
+      button.innerHTML = '&#9654;'; // Reset the arrow direction
+  }
+}
+
